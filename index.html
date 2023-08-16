@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Speack Up | Reads your text loudly</title>
   </head>
-  <body>
-    <nav>
+  <body class="">
+    <nav class="flex">
       <div class="logo">
         <img src="./imgs/logo-blue.png" alt="" />
       </div>
@@ -17,10 +17,25 @@
     </nav>
     <main>
       <fieldset>
-        <textarea name="" id="" cols="50" rows="10"></textarea>
-        <select></select>
-        <button>read</button>
+        <textarea
+          name=""
+          id=""
+          rows="15"
+          placeholder="Insert your text"
+        ></textarea>
+        <div class="lang | flex">
+          <select>
+            <option value="">Choose a language</option>
+          </select>
+          <button>
+            Speak
+            <svg class="mic">
+              <use href="./imgs/symbol-defs.svg#icon-volume-medium"></use>
+            </svg>
+          </button>
+        </div>
       </fieldset>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
