@@ -41,7 +41,6 @@ window.speechSynthesis.onvoiceschanged = function () {
   voices = window.speechSynthesis.getVoices();
   // use first voice by default
   speech.voice = voices[0];
-  console.log(voices[0]);
 
   voices.forEach((voice, i) => {
     selectVoices.options[i] = new Option(voice.name, i);
